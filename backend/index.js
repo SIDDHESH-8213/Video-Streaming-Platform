@@ -71,7 +71,7 @@ app.post("/upload", upload.single('file'), function(req, res){
     const videoUrl = `http://localhost:8000/uploads/courses/${lessonId}/index.m3u8`;
 
     res.json({
-      message: "Video converted to HLS format",
+      message: "Video converted to HLS format and ready to roll",
       videoUrl: videoUrl,
       lessonId: lessonId
     })
